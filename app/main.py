@@ -15,7 +15,7 @@ load_dotenv()
 # ── Gemini client setup ───────────────────────────────────────────────────────
 
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-GEMINI_MODEL  = "gemini-2.5-flash"
+GEMINI_MODEL  = "gemini-3-flash-preview"
 MAX_HISTORY   = 5   # keep last 5 message pairs per session
 REQUEST_TIMEOUT = 60  # seconds per attempt
 MAX_RETRIES   = 3   # retry up to 3 times on 429
